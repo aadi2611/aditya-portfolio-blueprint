@@ -1,5 +1,6 @@
 
 import { ArrowRight } from "lucide-react";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
 
 const Hero = () => {
   return (
@@ -46,10 +47,16 @@ const Hero = () => {
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-electric-blue to-electric-teal blur-3xl opacity-20 animate-pulse"></div>
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-electric-blue/30 animate-fade-in">
-                {/* Replace with actual image URL */}
-                <div className="w-full h-full bg-gradient-to-br from-electric-blue/40 to-electric-teal/40 flex items-center justify-center text-white">
-                  <span className="text-xl">Profile Photo</span>
-                </div>
+                <Avatar className="w-full h-full">
+                  <AvatarImage 
+                    src="/lovable-uploads/99c508b8-36d0-401a-9958-e4e2fee43a21.png" 
+                    alt="Aditya Singh" 
+                    className="object-cover w-full h-full"
+                  />
+                  <AvatarFallback className="bg-gradient-to-br from-electric-blue/40 to-electric-teal/40 text-xl">
+                    AS
+                  </AvatarFallback>
+                </Avatar>
               </div>
             </div>
           </div>
