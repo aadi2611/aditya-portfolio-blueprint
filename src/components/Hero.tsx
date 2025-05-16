@@ -49,7 +49,7 @@ const Hero = () => {
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-electric-blue/30 animate-fade-in">
                 <Avatar className="w-full h-full">
                   <AvatarImage 
-                    src="/lovable-uploads/99c508b8-36d0-401a-9958-e4e2fee43a21.png" 
+                    src="/lovable-uploads/a370d884-a08d-4ff8-99a8-1a4c2a672594.png" 
                     alt="Aditya Singh" 
                     className="object-cover w-full h-full"
                   />
