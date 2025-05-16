@@ -4,13 +4,13 @@ const Skills = () => {
     {
       title: "Languages & Frameworks",
       skills: [
-        { name: "Python", level: "Advanced" },
-        { name: "C++", level: "Intermediate" },
-        { name: "JavaScript", level: "Advanced" },
-        { name: "HTML", level: "Advanced" },
-        { name: "CSS", level: "Advanced" },
-        { name: "React.js", level: "Intermediate" },
-        { name: "Flask", level: "Intermediate" },
+        { name: "Python" },
+        { name: "C++" },
+        { name: "JavaScript" },
+        { name: "HTML" },
+        { name: "CSS" },
+        { name: "React.js" },
+        { name: "Flask" },
       ],
       background: "bg-gradient-to-br from-electric-blue/20 to-transparent",
       border: "border-electric-blue/30",
@@ -18,12 +18,12 @@ const Skills = () => {
     {
       title: "Data Science Tools",
       skills: [
-        { name: "NumPy", level: "Advanced" },
-        { name: "Pandas", level: "Advanced" },
-        { name: "Matplotlib", level: "Advanced" },
-        { name: "Power BI", level: "Advanced" },
-        { name: "Tableau", level: "Intermediate" },
-        { name: "BeautifulSoup", level: "Intermediate" },
+        { name: "NumPy" },
+        { name: "Pandas" },
+        { name: "Matplotlib" },
+        { name: "Power BI" },
+        { name: "Tableau" },
+        { name: "BeautifulSoup" },
       ],
       background: "bg-gradient-to-br from-electric-teal/20 to-transparent",
       border: "border-electric-teal/30",
@@ -31,12 +31,12 @@ const Skills = () => {
     {
       title: "Areas of Expertise",
       skills: [
-        { name: "Data Analysis", level: "Advanced" },
-        { name: "Web Scraping", level: "Intermediate" },
-        { name: "Predictive Modeling", level: "Intermediate" },
-        { name: "Dashboarding", level: "Advanced" },
-        { name: "Full-stack Development", level: "Intermediate" },
-        { name: "Data Visualization", level: "Advanced" },
+        { name: "Data Analysis" },
+        { name: "Web Scraping" },
+        { name: "Predictive Modeling" },
+        { name: "Dashboarding" },
+        { name: "Full-stack Development" },
+        { name: "Data Visualization" },
       ],
       background: "bg-gradient-to-br from-purple-500/20 to-transparent",
       border: "border-purple-500/30",
@@ -69,22 +69,9 @@ const Skills = () => {
                   <div key={skillIndex} className="space-y-2">
                     <div className="flex justify-between items-center">
                       <span className="text-gray-200">{skill.name}</span>
-                      <span className={`text-xs px-2 py-1 rounded ${
-                        skill.level === "Advanced" 
-                          ? "bg-electric-blue/20 text-electric-blue" 
-                          : "bg-electric-teal/20 text-electric-teal"
-                      }`}>
-                        {skill.level}
-                      </span>
                     </div>
                     <div className="w-full bg-gray-700 rounded-full h-1.5">
-                      <div 
-                        className={`h-1.5 rounded-full ${
-                          skill.level === "Advanced" 
-                            ? "bg-gradient-to-r from-electric-blue to-purple-500 w-[90%]" 
-                            : "bg-gradient-to-r from-electric-teal to-electric-blue w-[70%]"
-                        }`}
-                      ></div>
+                      <div className="bg-gradient-to-r from-electric-blue to-purple-500 h-1.5 rounded-full w-full"></div>
                     </div>
                   </div>
                 ))}

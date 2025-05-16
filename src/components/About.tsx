@@ -72,42 +72,38 @@ const About = () => {
               <h4 className="text-electric-blue font-medium mb-3">Programming</h4>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <div className="flex justify-between mb-1">
+                  <div className="mb-1">
                     <span className="text-sm">Python</span>
-                    <span className="text-sm text-gray-400">95%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-electric-blue h-2 rounded-full" style={{ width: "95%" }}></div>
+                    <div className="bg-electric-blue h-2 rounded-full w-[95%]"></div>
                   </div>
                 </div>
                 
                 <div>
-                  <div className="flex justify-between mb-1">
+                  <div className="mb-1">
                     <span className="text-sm">JavaScript</span>
-                    <span className="text-sm text-gray-400">85%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-electric-blue h-2 rounded-full" style={{ width: "85%" }}></div>
+                    <div className="bg-electric-blue h-2 rounded-full w-[85%]"></div>
                   </div>
                 </div>
                 
                 <div>
-                  <div className="flex justify-between mb-1">
+                  <div className="mb-1">
                     <span className="text-sm">C++</span>
-                    <span className="text-sm text-gray-400">75%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-electric-blue h-2 rounded-full" style={{ width: "75%" }}></div>
+                    <div className="bg-electric-blue h-2 rounded-full w-[75%]"></div>
                   </div>
                 </div>
                 
                 <div>
-                  <div className="flex justify-between mb-1">
+                  <div className="mb-1">
                     <span className="text-sm">HTML/CSS</span>
-                    <span className="text-sm text-gray-400">90%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-electric-blue h-2 rounded-full" style={{ width: "90%" }}></div>
+                    <div className="bg-electric-blue h-2 rounded-full w-[90%]"></div>
                   </div>
                 </div>
               </div>
@@ -118,42 +114,38 @@ const About = () => {
               <h4 className="text-electric-teal font-medium mb-3">Frameworks & Libraries</h4>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <div className="flex justify-between mb-1">
+                  <div className="mb-1">
                     <span className="text-sm">NumPy/Pandas</span>
-                    <span className="text-sm text-gray-400">90%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-electric-teal h-2 rounded-full" style={{ width: "90%" }}></div>
+                    <div className="bg-electric-teal h-2 rounded-full w-[90%]"></div>
                   </div>
                 </div>
                 
                 <div>
-                  <div className="flex justify-between mb-1">
+                  <div className="mb-1">
                     <span className="text-sm">React.js</span>
-                    <span className="text-sm text-gray-400">80%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-electric-teal h-2 rounded-full" style={{ width: "80%" }}></div>
+                    <div className="bg-electric-teal h-2 rounded-full w-[80%]"></div>
                   </div>
                 </div>
                 
                 <div>
-                  <div className="flex justify-between mb-1">
+                  <div className="mb-1">
                     <span className="text-sm">Flask</span>
-                    <span className="text-sm text-gray-400">85%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-electric-teal h-2 rounded-full" style={{ width: "85%" }}></div>
+                    <div className="bg-electric-teal h-2 rounded-full w-[85%]"></div>
                   </div>
                 </div>
                 
                 <div>
-                  <div className="flex justify-between mb-1">
+                  <div className="mb-1">
                     <span className="text-sm">Matplotlib</span>
-                    <span className="text-sm text-gray-400">85%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-electric-teal h-2 rounded-full" style={{ width: "85%" }}></div>
+                    <div className="bg-electric-teal h-2 rounded-full w-[85%]"></div>
                   </div>
                 </div>
               </div>
@@ -164,22 +156,20 @@ const About = () => {
               <h4 className="text-electric-blue font-medium mb-3">Tools & Platforms</h4>
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <div className="flex justify-between mb-1">
+                  <div className="mb-1">
                     <span className="text-sm">Power BI</span>
-                    <span className="text-sm text-gray-400">90%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-electric-blue to-electric-teal h-2 rounded-full" style={{ width: "90%" }}></div>
+                    <div className="bg-gradient-to-r from-electric-blue to-electric-teal h-2 rounded-full w-[90%]"></div>
                   </div>
                 </div>
                 
                 <div>
-                  <div className="flex justify-between mb-1">
+                  <div className="mb-1">
                     <span className="text-sm">Tableau</span>
-                    <span className="text-sm text-gray-400">80%</span>
                   </div>
                   <div className="w-full bg-gray-700 rounded-full h-2">
-                    <div className="bg-gradient-to-r from-electric-blue to-electric-teal h-2 rounded-full" style={{ width: "80%" }}></div>
+                    <div className="bg-gradient-to-r from-electric-blue to-electric-teal h-2 rounded-full w-[80%]"></div>
                   </div>
                 </div>
               </div>
