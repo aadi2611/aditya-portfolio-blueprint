@@ -1,10 +1,16 @@
 
 import { ArrowRight } from "lucide-react";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import ThemeToggle from "./ThemeToggle";
 
 const Hero = () => {
   return (
     <section id="home" className="min-h-screen flex items-center relative pt-20 pb-16 overflow-hidden">
+      {/* Theme Toggle Button */}
+      <div className="absolute top-6 right-6 z-10">
+        <ThemeToggle />
+      </div>
+      
       {/* Background elements */}
       <div className="absolute top-20 left-10 w-20 h-20 bg-electric-blue/20 rounded-full blur-3xl"></div>
       <div className="absolute bottom-20 right-10 w-32 h-32 bg-electric-teal/20 rounded-full blur-3xl"></div>
