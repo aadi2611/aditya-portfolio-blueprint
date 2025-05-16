@@ -1,6 +1,6 @@
 
 import { useState } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Image } from "lucide-react";
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
@@ -10,7 +10,7 @@ const Projects = () => {
       id: 1,
       title: "Cricket Data Analysis",
       category: "data-analysis",
-      image: "cricket-analysis.jpg", // Placeholder
+      image: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&q=80",
       description: "Web scraping with BeautifulSoup and visualization with Power BI to analyze cricket match statistics and player performance.",
       tools: ["Python", "BeautifulSoup", "Power BI", "Data Analysis"],
       link: "#"
@@ -19,7 +19,7 @@ const Projects = () => {
       id: 2,
       title: "Stock Prediction Using Twitter Sentiment Analysis",
       category: "machine-learning",
-      image: "stock-prediction.jpg", // Placeholder
+      image: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?auto=format&fit=crop&q=80",
       description: "Combined sentiment analysis from Twitter data with historical stock prices to predict market trends using ML algorithms.",
       tools: ["Python", "NLTK", "Machine Learning", "Pandas", "Matplotlib"],
       link: "#"
@@ -28,7 +28,7 @@ const Projects = () => {
       id: 3,
       title: "Bodyfit Solution",
       category: "web-dev",
-      image: "bodyfit.jpg", // Placeholder
+      image: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&q=80",
       description: "A responsive website for a fitness platform built with React and Bootstrap, featuring workout plans and nutrition guides.",
       tools: ["React", "Bootstrap", "JavaScript", "Responsive Design"],
       link: "#"
@@ -37,7 +37,7 @@ const Projects = () => {
       id: 4,
       title: "Chatbot Using Flask",
       category: "nlp",
-      image: "chatbot.jpg", // Placeholder
+      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&q=80",
       description: "NLP-powered chatbot with a responsive UI built using Flask, JavaScript, and natural language processing techniques.",
       tools: ["Flask", "Python", "NLP", "JavaScript", "HTML/CSS"],
       link: "#"
@@ -92,9 +92,18 @@ const Projects = () => {
             <div key={project.id} className="glass-card overflow-hidden group transition-all duration-300 hover:transform hover:scale-[1.02]">
               {/* Project image */}
               <div className="h-64 bg-gray-800 overflow-hidden">
-                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-electric-blue/20 to-electric-teal/20">
-                  <span className="text-gray-400">{project.title} Screenshot</span>
-                </div>
+                {project.image ? (
+                  <img 
+                    src={project.image} 
+                    alt={`${project.title} Screenshot`} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-electric-blue/20 to-electric-teal/20">
+                    <Image size={48} className="text-gray-600" />
+                    <span className="ml-2 text-gray-400">{project.title}</span>
+                  </div>
+                )}
               </div>
               
               {/* Project details */}
